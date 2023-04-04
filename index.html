@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF_8">
+	<meta http_equiv="X_UA_Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device_width, initial_scale=1.0">
+	<title>TO DO LIST </title>
+
+	<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+	
+	<header>
+		<h1 id="l1">TO DO LIST </h1>
+		<form id="new_task_form">
+			<input 
+				type="text" 
+				name="new_task_input" 
+				id="new_task_input" 
+				placeholder="TO DO TASK . . . " 
+				required/>
+				<input 
+				type="date"
+				name="new_task_date"
+				id="new_task_date"
+				placeholder="Task due date" 
+				required/>
+			<input 
+				type="time"
+				name="new_task_time"
+				id="new_task_time"
+				placeholder="Task due time" 
+				required/>
+			<input 
+				type="submit"
+				id="new_task_submit" 
+				value="Add task" 
+				onClick="window.location.reload()" />
+		</form>
+	</header>
+	<main>
+		<section class="task_list">
+			<h2>Tasks</h2>
+
+			<div id="tasks">
+
+				<!-- <div class="task" >
+					<div class="content" >
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+						<button class="done">Done</button>
+					</div>
+				</div> -->
+
+			</div>
+		</section>
+	</main>
+
+	<script src="main.js"></script>
+</body>
+</html>
